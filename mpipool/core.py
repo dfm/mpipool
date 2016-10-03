@@ -267,4 +267,5 @@ def _error_function(task):
 
 class MPIPoolException(Exception):
     def __init__(self, tb):
+        super(MPIPoolException, self).__init__(tb)
         self.traceback = tb
